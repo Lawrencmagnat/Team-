@@ -1,0 +1,94 @@
+body {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    box-shadow: 10px 5px 10px rgba(26, 15, 15, 0.05);
+}
+
+.card {
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+
+.card-img-top {
+    height: 200px;
+    /* Adjust the height as needed */
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    /* CSS transition for smooth transformation */
+
+}
+
+.circular-image {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    /* Adjust the width of the circular image */
+    height: 100px;
+    /* Adjust the height of the circular image */
+    position: relative;
+    margin: 0 auto;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Increase the size of the card on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Add a subtle shadow effect on hover */
+}
+
+/* Hover effect for card images */
+.card:hover .card-img-top {
+    transform: scale(1.1);
+    /* Increase the size of the image on hover */
+}
+
+.text-end {
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    display: inline-block;
+    margin: 0 auto;
+    color: red;
+}
+
+
+.font-weight-bold {
+    font-family: 'Roboto', sans-serif;
+    color: gray
+}
+
+.btn-outline-dark:hover,
+.btn-primary:hover {
+    background-color: #14a800;
+    color: #fff;
+}
+
+.nav ul:hover {
+    background: #f8f9fa;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+    /* Change the color after hover */
+}
+
+.nav-link.active {
+    color: #212f3e;
+    /* Change the color when active */
+}
+
+.custom-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-link.active:before {
+    transform: scaleX(1);
+}
